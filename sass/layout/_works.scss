@@ -1,4 +1,5 @@
-.work-list {
+.works {
+  @extend %list;
   display: flex;
   &__item {
     position: relative;

@@ -1,8 +1,9 @@
 @import './utils/variables';
+@import './base/normalize';
 @import './base/_common';
 @import './base/reset';
 @import './utils/vs-hidden';
-@import './components/conteiner';
+@import './layout/conteiner';
 @import './layout/section';
 @import './components/btn';
 @import './layout/header';
@@ -12,7 +13,7 @@
 @import './layout/hero';
 @import './components/titles';
 @import './layout/qualities';
-@import './layout/work';
+@import './layout/works';
 @import './layout/team';
 @import './components/social';
 @import './layout/clients';
@@ -22,3 +23,4 @@
 @import './components/product';
 @import './components/modal';
 @import './utils/mixin';
+@import './utils/placeholder';

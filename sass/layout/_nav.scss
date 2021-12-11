@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   &__list {
+    @extend %list;
     display: flex;
   }
   &__item:not(:last-child) {
     margin-right: 50px;
   }
   &__link {
+    @extend %link;
     position: relative;
     display: block;
     padding-top: 32px;

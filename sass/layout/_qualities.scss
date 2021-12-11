@@ -1,4 +1,5 @@
-.qualities-list {
+.qualities {
+  @extend %list;
   display: flex;
   &__item {
     width: 270px;

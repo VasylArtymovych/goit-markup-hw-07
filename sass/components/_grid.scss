@@ -1,4 +1,5 @@
 .grid {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   &__item:not(:nth-child(3n)) {

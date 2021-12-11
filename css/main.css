@@ -1,14 +1,266 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
 body {
   color: #757575;
   font-family: roboto;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 p,
@@ -203,22 +455,16 @@ ul {
   display: flex;
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
-}
-
 .contacts__link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+
+.contacts__item--margl + .contacts__item--margl {
+  margin-left: 30px;
 }
 
 .contacts__icon {
@@ -226,31 +472,26 @@ ul {
   fill: currentColor;
 }
 
-.address {
-  margin-bottom: 9px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.contacts__link-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.conts-list__item:not(:last-child) {
+.contacts--footer {
+  display: block;
+}
+
+.contacts__item--margb:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.conts-list__link {
+.contacts__link--style {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.conts-list__link:hover, .conts-list__link:focus {
-  color: #2196f3;
 }
 
 .hero {
@@ -292,19 +533,19 @@ ul {
   color: #212121;
 }
 
-.qualities-list {
+.qualities {
   display: flex;
 }
 
-.qualities-list__item {
+.qualities__item {
   width: 270px;
 }
 
-.qualities-list__item:not(:last-child) {
+.qualities__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.qualities-list__img {
+.qualities__img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,12 +556,12 @@ ul {
   background-color: #f5f4fa;
 }
 
-.qualities-list__icon {
+.qualities__icon {
   width: 70px;
   height: 70px;
 }
 
-.qualities-list__title {
+.qualities__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -330,7 +571,7 @@ ul {
   color: #212121;
 }
 
-.qualities-list__text {
+.qualities__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -338,24 +579,24 @@ ul {
   color: #757575;
 }
 
-.work-list {
+.works {
   display: flex;
 }
 
-.work-list__item {
+.works__item {
   position: relative;
   margin-right: 30px;
 }
 
-.work-list__item:last-child {
+.works__item:last-child {
   margin-right: 0;
 }
 
-.work-list__img {
+.works__img {
   display: block;
 }
 
-.work-list__text {
+.works__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -373,30 +614,30 @@ ul {
   color: #ffffff;
 }
 
-.team-list {
+.team {
   display: flex;
 }
 
-.team-list__item {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
-.team-list__item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-list__photo {
+.team__photo {
   display: block;
 }
 
-.team-list__description {
+.team__description {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-list__name {
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -406,7 +647,7 @@ ul {
   color: #212121;
 }
 
-.team-list__position {
+.team__position {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -416,27 +657,27 @@ ul {
   color: #757575;
 }
 
-.social-list {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.social-list--position {
+.socials--position {
   display: flex;
   justify-content: flex-start;
   text-align: center;
 }
 
-.social-list__item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.social-list__item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-list__link {
+.socials__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -447,27 +688,27 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__link:hover, .social-list__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
 
-.social-list__link--bgrcolor {
+.socials__link--bgrcolor {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__icon {
+.socials__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.social-wrap {
+.socials-wrap {
   margin-left: 70px;
 }
 
-.social-text {
+.socials-text {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
@@ -478,20 +719,20 @@ ul {
   color: #ffffff;
 }
 
-.clients-list {
+.clients {
   display: flex;
 }
 
-.clients-list__item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-list__item + .clients-list__item {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 
-.clients-list__link {
+.clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -504,12 +745,12 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list__link:hover, .clients-list__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
   color: #2196f3;
 }
 
-.clients-list__icon {
+.clients__icon {
   fill: currentColor;
 }
 
@@ -522,6 +763,16 @@ ul {
 .footer__container {
   display: flex;
   align-items: baseline;
+}
+
+.footer__address {
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .newsletter-form__label {
@@ -817,5 +1068,13 @@ ul {
 .modal__btn:hover .modal__icon {
   fill: #2196f3;
   cursor: pointer;
+}
+
+.btn-list, .nav__list, .contacts, .qualities, .works, .team, .socials, .clients, .grid {
+  list-style: none;
+}
+
+.nav__link, .logo, .contacts__link, .product {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
