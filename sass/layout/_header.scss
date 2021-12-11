@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  background-color: var(--white-color);
+  background-color: $bgr-color-main;
   border-bottom: 1px solid #ececec;
   &__container {
     display: flex;

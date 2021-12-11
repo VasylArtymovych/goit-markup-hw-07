@@ -9,11 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primery-text-color);
+    color: $color-primery-text;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      color: var(--accent-text-clor);
+      color: $color-accent;
     }
   }
   &__icon {
@@ -29,7 +29,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: $color-secondary-text;
 }
 
 .conts-list__item:not(:last-child) {
@@ -44,6 +44,6 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: var(--accent-text-clor);
+    color: $color-accent;
   }
 }

@@ -3,9 +3,9 @@
   &__item {
     width: 170px;
     height: 92px;
-  }
-  &__item + &__item {
-    margin-left: 30px;
+    & + & {
+      margin-left: 30px;
+    }
   }
   &__link {
     display: flex;
@@ -14,20 +14,18 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: 1px solid var(--icons-color);
+    border: 1px solid $color-icons;
     border-radius: 4px;
-    color: var(--icons-color);
+    color: $color-icons;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link:hover,
   &__link:focus {
-    border-color: var(--accent-text-clor);
-    color: var(--accent-text-clor);
+    border-color: $color-accent;
+    color: $color-accent;
   }
   &__icon {
-  fill: currentColor;
+    fill: currentColor;
+  }
 }
-
-}
-

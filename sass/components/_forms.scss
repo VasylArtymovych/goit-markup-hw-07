@@ -1,5 +1,5 @@
-.footer-form {
-  &__title {
+.newsletter-form {
+  &__label {
     margin-left: 94px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -7,7 +7,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $color-secondary-text;
   }
   &__field {
     display: flex;
@@ -22,12 +22,12 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: var(--background-color);
-    color: var(--white-color);
+    background-color: $bgr-color-footer;
+    color: $color-secondary-text;
     outline: none;
 
     &:focus {
-      border-color: var(--white-color);
+      border-color: $bgr-color-main;
     }
     &::placeholder {
       font-weight: 400px;
@@ -46,7 +46,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $color-title-text;
 }
 
 .modal-form__label {
@@ -60,7 +60,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--primery-text-color);
+  color: $color-primery-text;
 }
 
 .modal-form__wrap {
@@ -80,7 +80,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   &:focus {
-    border-color: var(--accent-text-clor);
+    border-color: $color-accent;
   }
 }
 
@@ -91,7 +91,7 @@
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .modal-form__input:focus + & {
-    fill: var(--accent-text-clor);
+    fill: $color-accent;
   }
 }
 
@@ -121,7 +121,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primery-text-color);
+  color: $color-primery-text;
 }
 
 .modal-form__check {
@@ -130,7 +130,7 @@
 
 .modal-form__link {
   margin-left: 4px;
-  color: var(--accent-text-clor);
+  color: $color-accent;
 }
 
 .modal-form__cust-check {
@@ -143,12 +143,12 @@
   justify-content: center;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid $color-title-text;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .modal-form__check:checked + & {
-    background-color: var(--accent-text-clor);
+    background-color: $color-accent;
     border: none;
   }
 }

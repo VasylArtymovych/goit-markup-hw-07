@@ -5,11 +5,17 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   &__text {
-    color: var(--accent-text-clor);
+    color: $color-accent;
   }
 }
 
 .logo--header {
   margin-right: 91px;
-  color: var(--title-text-color);
+  color: $color-title-text;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: $color-secondary-text;
 }
