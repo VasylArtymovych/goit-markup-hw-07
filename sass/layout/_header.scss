@@ -6,10 +6,9 @@
   letter-spacing: 0.02em;
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

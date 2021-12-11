@@ -2,15 +2,13 @@
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__logo {
-  display: block;
-  margin-bottom: 20px;
-  color: var(--white-color);
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
 }

@@ -70,8 +70,8 @@ ul {
 
 .btn {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   margin: 0px;
@@ -165,8 +165,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-text-clor);
 }
 
@@ -194,13 +193,13 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.logo__text {
+  color: var(--accent-text-clor);
+}
+
 .logo--header {
   margin-right: 91px;
   color: var(--title-text-color);
-}
-
-.logo__text {
-  color: var(--accent-text-clor);
 }
 
 .contacts {
@@ -425,6 +424,12 @@ ul {
   justify-content: center;
 }
 
+.social-list--position {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
 .social-list__item {
   width: 44px;
   height: 44px;
@@ -445,10 +450,14 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-text-clor);
   color: white;
+}
+
+.social-list__link--bgrcolor {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__icon {
@@ -470,17 +479,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-}
-
-.social-list--position {
-  display: flex;
-  justify-content: flex-start;
-  text-align: center;
-}
-
-.social-list__link--bgrcolor {
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list {
@@ -509,8 +507,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-text-clor);
   color: var(--accent-text-clor);
 }
@@ -620,8 +617,7 @@ ul {
   outline: none;
 }
 
-.modal-form__input:focus, .modal-form__input:focus,
-.modal-form__textarea:focus,
+.modal-form__input:focus,
 .modal-form__textarea:focus {
   border-color: var(--accent-text-clor);
 }
