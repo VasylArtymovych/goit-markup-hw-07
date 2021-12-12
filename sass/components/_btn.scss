@@ -1,7 +1,5 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex();
   width: 200px;
   height: 50px;
   margin: 0px;
@@ -10,11 +8,10 @@
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
-  background: $color-accent;
-  color: $color-secondary-text;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-
+  @include coloredbtn();
+  // background: $color-accent;
+  // color: $color-secondary-text;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   &__icon {
     margin-left: 10px;
     fill: $color-secondary-text;
@@ -23,8 +20,7 @@
 
 .btn-list {
   @extend %list;
-  display: flex;
-  justify-content: center;
+  @include centeredflex();
   margin-bottom: 50px;
   &__item:not(:last-child) {
     margin-right: 8px;
@@ -46,14 +42,12 @@
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: $color-accent;
-      color: $color-secondary-text;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+      @include coloredbtn();
+      // хочу поставить значения что внизу, тоесть изменить знач тению
+      // background-color: $color-accent;
+      // color: $color-secondary-text;
+      // box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      //   0px 2px 2px rgba(0, 0, 0, 0.12);
     }
   }
-}
-
-.btn--cent {
-  margin: 0 auto;
 }

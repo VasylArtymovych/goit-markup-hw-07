@@ -1,6 +1,6 @@
 .contacts {
   @extend %list;
-  display: flex;
+  @include centeredflex();
   &__link {
     @extend %link;
     color: $color-primery-text;
@@ -18,10 +18,8 @@
   margin-right: 10px;
   fill: currentColor;
 }
-.contacts__link-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contacts__link--cent {
+  @include centeredflex();
 }
 
 .contacts--footer {
