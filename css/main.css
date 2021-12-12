@@ -306,6 +306,18 @@ body {
   margin: 0 auto;
 }
 
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -372,7 +384,7 @@ body {
 .btn-list__btn:hover, .btn-list__btn:focus {
   background: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08) 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -384,12 +396,6 @@ body {
   letter-spacing: 0.02em;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -417,6 +423,7 @@ body {
 
 .nav {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -471,16 +478,16 @@ body {
   color: #2196f3;
 }
 
-.contacts__item--margl + .contacts__item--margl {
-  margin-left: 30px;
-}
-
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts__link--cent {
+.contacts__item--margl + .contacts__item--margl {
+  margin-left: 30px;
+}
+
+.contacts__link--centf {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,6 +550,8 @@ body {
 
 .qualities {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .qualities__item {
@@ -589,6 +598,8 @@ body {
 
 .works {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .works__item {
@@ -624,6 +635,8 @@ body {
 
 .team {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team__item {
@@ -703,12 +716,7 @@ body {
 .socials {
   display: flex;
   justify-content: center;
-}
-
-.socials--position {
-  display: flex;
-  justify-content: flex-start;
-  text-align: center;
+  align-items: center;
 }
 
 .socials__item {
@@ -766,11 +774,6 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer__address {

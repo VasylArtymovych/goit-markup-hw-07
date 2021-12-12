@@ -1,6 +1,6 @@
 .qualities {
   @extend %list;
-  display: flex;
+  @include centeredflex();
   &__item {
     width: 270px;
     &:not(:last-child) {
@@ -8,9 +8,7 @@
     }
   }
   &__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredflex();
     width: 270px;
     height: 120px;
     margin-bottom: 30px;

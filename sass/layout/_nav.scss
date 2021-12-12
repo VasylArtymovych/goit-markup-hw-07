@@ -1,6 +1,5 @@
 .nav {
-  display: flex;
-  align-items: center;
+  @include centeredflex();
   &__list {
     @extend %list;
     display: flex;

@@ -9,16 +9,17 @@
       color: $color-accent;
     }
   }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 .contacts__item--margl + .contacts__item--margl {
   margin-left: 30px;
 }
-.contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.contacts__link--cent {
+
+.contacts__link--centf {
   @include centeredflex();
 }
 
@@ -33,6 +34,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }

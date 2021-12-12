@@ -1,12 +1,6 @@
 .socials {
   @extend %list;
-  display: flex;
-  justify-content: center;
-  &--position {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-  }
+  @include centeredflex();
 }
 
 .socials__item {

@@ -6,9 +6,4 @@
   letter-spacing: 0.02em;
   background-color: $bgr-color-main;
   border-bottom: 1px solid #ececec;
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
